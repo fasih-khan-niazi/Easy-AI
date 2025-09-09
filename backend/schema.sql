@@ -1,3 +1,6 @@
+-- EasyAI creations table for Neon Postgres.
+-- Run this once in the Neon SQL editor before starting the API.
+
 CREATE TABLE IF NOT EXISTS creations (
   id SERIAL PRIMARY KEY,
   user_id TEXT NOT NULL,
