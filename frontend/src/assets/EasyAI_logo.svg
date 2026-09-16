@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" width="360" height="96" role="img" aria-labelledby="title desc">
+  <title id="title">EasyAI Logo</title>
+  <desc id="desc">A yellow 8‑petal flower symbol followed by the word EasyAI in a cyan-to-indigo gradient.</desc>
+
+  <!-- defs -->
+  <defs>
+    <!-- gradient for wordmark -->
+    <linearGradient id="eaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>   <!-- cyan-400 -->
+      <stop offset="100%" stop-color="#6366f1"/> <!-- indigo-500 -->
+    </linearGradient>
+
+    <!-- subtle shadow -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="rgba(0,0,0,0.35)" />
+    </filter>
+  </defs>
+
+  <!-- Left: 8-petal flower -->
+  <g transform="translate(32,48)" filter="url(#softShadow)">
+    <!-- petals -->
+    <!-- Using slim ellipses rotated around the center -->
+    <!-- Tailwind yellow-400 (#facc15) with slight inner stroke -->
+    <g fill="#FACC15" stroke="#F59E0B" stroke-width="1.2">
+      <ellipse rx="10" ry="28" transform="rotate(0)" />
+      <ellipse rx="10" ry="28" transform="rotate(45)" />
+      <ellipse rx="10" ry="28" transform="rotate(90)" />
+      <ellipse rx="10" ry="28" transform="rotate(135)" />
+      <ellipse rx="10" ry="28" transform="rotate(180)" />
+      <ellipse rx="10" ry="28" transform="rotate(225)" />
+      <ellipse rx="10" ry="28" transform="rotate(270)" />
+      <ellipse rx="10" ry="28" transform="rotate(315)" />
+    </g>
+    <!-- center -->
+    <circle r="8.5" fill="#FDE68A" stroke="#F59E0B" stroke-width="1.2"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(80,22)">
+    <text x="0" y="50"
+      font-family="Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto"
+      font-weight="800"
+      font-size="48"
+      fill="url(#eaGradient)"
+      letter-spacing="0.5">
+      EasyAI
+    </text>
+  </g>
+</svg>
