@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "EasyAI Express API for Clerk auth, AI tools, and creations",
   "dependencies": {
     "@clerk/express": "^1.7.21",
     "@neondatabase/serverless": "^1.0.1",
